@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio Final</title>
+</head>
+<body>
+    <script>
+    let tabla = parseInt(prompt("indica la medida del tablero:"));
+    for(let alto = tabla; alto > 0; alto - 1){
+        for(let ancho = tabla; ancho > 0; ancho - 1){
+            if(ancho % 2 == 0){
+                console.log("O");
+            }
+            else{
+                console.log("X");
+            }
+
+            if(alto % 2 == 0){
+                console.log("X");
+            }
+            else{
+                console.log("O");
+            }
+         }
+    }
+  
+    </script>
+</body>
+</html>
