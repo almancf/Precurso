@@ -8,23 +8,31 @@
 </head>
 <body>
     <script>
-    let resultado = " ";
+    let resultado = "";
     let tabla = parseInt(prompt("indica la medida del tablero:"));
-    for(let ancho = tabla; ancho > 0; ancho = ancho - 1){
+    for(let ancho = tabla; ancho > 0; ancho = ancho - 1){       
         for( let alto = tabla; alto > 0; alto = alto - 1){
-             if(alto % 2 == 0){
+            if(ancho % 2 == 0){
+                if(alto % 2 == 0){
                     resultado = resultado + "X ";
                 }
-                else{
+                if(alto % 2 != 0){
                     resultado = resultado + "O ";
                 }
-             
+            }
+            if(ancho % 2 != 0){
+                if(alto % 2 == 0){
+                    resultado = resultado + "O ";
+                }
+                if(alto % 2 != 0){
+                    resultado = resultado + "X ";
+                }
+                
+            }
         }  
-         
-        console.log (resultado);
+        resultado = resultado + "\n";      
     }
-        
-    
+    console.log (resultado);      
     </script>
 </body>
 </html>
